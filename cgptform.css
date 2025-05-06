@@ -1,0 +1,90 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#FFE4C4;
+    padding: 20px;
+}
+
+.container {
+    background-color: cornsilk;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1#title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #536878;
+}
+
+p#description {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0072BB;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    border: 1px solid #cc9;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: green;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-left: 5px;
+}
+
+input[type="checkbox"] {
+    margin-left: 5px;
+}

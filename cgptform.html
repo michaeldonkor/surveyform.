@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="cgptform.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">LC Survey Form</h1>
+        <p id="description">. Please take your time to fill out our survey.</p>
+
+        <form id="survey-form">
+            <!-- Name input -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Age input -->
+            <div class="form-group">
+                <label id="number-label" for="number">Age:</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+            </div>
+
+            <!-- Dropdown -->
+            <div class="form-group">
+                <label for="dropdown" >What programme do you offer?</label>
+                <select id="dropdown" name="device" required>
+
+         <option value="select-one">Select One</option>
+
+                    <option value="software-Engineering">Software Engineering</option>
+                    <option value="mobile-computing">Mobile Computing</option>
+
+                       <option value="computer-science">Computer Science</option>
+
+                </select>
+            </div>
+
+            <!-- Radio buttons -->
+            <div class="form-group">
+                <p>How would you rate the programme?</p>
+                <label>
+                    <input type="radio" name="rate" value="poor" > Poor
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="fair"> Fair
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="good"> Good
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="very-good"> Very Good
+                </label>
+
+<label>
+                    <input type="radio" name="rate" value="excellent"> Excellent 
+                </label>                 
+
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <p>What features would you like your lectures?</p>
+                <label>
+                    <input type="checkbox" name="features" value="online">Online
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="face-to-face"> Face-to-Face
+                </label>
+               
+            </div>
+
+            <!-- Additional Comments -->
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Your feedback" rows="4" cols="50"></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
